@@ -1,7 +1,8 @@
 run_analysis <- function() {
   
-  #Load in test files
-    
+  ##SECTION: 1##
+  ##Load all files
+  #Load in test files 
   xtest <- read.table( "UCI HAR Dataset/test/X_test.txt" ); 
   ytest <- read.table( "UCI HAR Dataset/test/Y_test.txt" ); 
   
@@ -16,6 +17,9 @@ run_analysis <- function() {
   #Bind training files
   xtrain <- cbind(xtrain, ytrain)
   
+  
+  ##SECTION: 2##
+  ##Clean and Merge Data Set
   #Merge test and training datasets
   dataSet <- rbind(xtrain, xtest)
   
@@ -25,6 +29,9 @@ run_analysis <- function() {
   f <- c(f, "labelId")
   colnames(dataSet) <- f
   
+  
+  ##SECTION: 3##
+  ##Create first data set
   #Load required features for mean and std
   n <- c(1,2,3,4,5,6,41,42,43,44,45,46,81,82,83,84,85,86,121,122,123,124,125,126,161,
          162,163,164,165,166,201,202,214,215,227,228,240,241,253,254,266,267,268,269,
@@ -34,22 +41,26 @@ run_analysis <- function() {
   #Get mean and std columns and label
   dataSet2 <- dataSet[n]
   
-  #Add activity Labels
+  #Add activity Labels and save
   labels <- read.table("UCI HAR Dataset/activity_labels.txt")
   colnames(labels) <- c("id", "labelName")
   meanAndStdDS <- merge(dataSet2, labels, by.x="labelId", by.y="id", all=TRUE)
   
+  
+  ##SECTION: 4##
+  ##Create second data set
   #Load required features for mean
   n <- c(1,2,3,41,42,43,81,82,83,121,122,123,161,162,163,201,214,227,240,253,266,267,
          268,345,346,347,424,425,426,503,516,529,542,562)
   
-  #Get mean
+  #Get mean vairables
   dataSet2 <- dataSet[n]
   
-  #Add activity Labels
+  #Add activity Labels and save
   meanDS <- merge(dataSet2, labels, by.x="labelId", by.y="id", all=TRUE)
   
-  #Write out DataSet
+  ##SECTION: 5##
+  #Write out second DataSet
   write.table(meanDS, file = "meanDataSet.txt", row.names=FALSE);
   
 }

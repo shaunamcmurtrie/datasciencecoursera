@@ -1,0 +1,35 @@
+1 "labelId" - The activity label id, from either Y_train.txt or Y_test.txt
+2 “tBodyAcc-mean()-X" - the mean of the indicated feature
+3 “tBodyAcc-mean()-Y"  - the mean of the indicated feature
+4 “tBodyAcc-mean()-Z"  - the mean of the indicated feature
+5 “tGravityAcc-mean()-X"  - the mean of the indicated feature
+6 "tGravityAcc-mean()-Y"  - the mean of the indicated feature
+7 “tGravityAcc-mean()-Z"  - the mean of the indicated feature
+8 “tBodyAccJerk-mean()-X"  - the mean of the indicated feature
+9 “tBodyAccJerk-mean()-Y"  - the mean of the indicated feature
+10 “tBodyAccJerk-mean()-Z"  - the mean of the indicated feature
+11 ”tBodyGyro-mean()-X"  - the mean of the indicated feature
+12 “tBodyGyro-mean()-Y"  - the mean of the indicated feature
+13 “tBodyGyro-mean()-Z"  - the mean of the indicated feature
+14 “tBodyGyroJerk-mean()-X"  - the mean of the indicated feature
+15 “tBodyGyroJerk-mean()-Y"  - the mean of the indicated feature
+16 “tBodyGyroJerk-mean()-Z"  - the mean of the indicated feature
+17 “tBodyAccMag-mean()"  - the mean of the indicated feature
+18 “tGravityAccMag-mean()"  - the mean of the indicated feature
+19 “tBodyAccJerkMag-mean()"  - the mean of the indicated feature
+20 "tBodyGyroMag-mean()"  - the mean of the indicated feature
+21 “tBodyGyroJerkMag-mean()"  - the mean of the indicated feature
+22 “fBodyAcc-mean()-X"  - the mean of the indicated feature
+23 “fBodyAcc-mean()-Y"  - the mean of the indicated feature
+24 “fBodyAcc-mean()-Z"  - the mean of the indicated feature
+25 “fBodyAccJerk-mean()-X"  - the mean of the indicated feature
+26 “fBodyAccJerk-mean()-Y"  - the mean of the indicated feature
+27 “fBodyAccJerk-mean()-Z"  - the mean of the indicated feature
+28 “fBodyGyro-mean()-X" - the mean of the indicated feature 
+29 “fBodyGyro-mean()-Y"  - the mean of the indicated feature
+30 “fBodyGyro-mean()-Z"  - the mean of the indicated feature
+31 “fBodyAccMag-mean()"  - the mean of the indicated feature
+32 “fBodyBodyAccJerkMag-mean()"  - the mean of the indicated feature
+33 ”fBodyBodyGyroMag-mean()"  - the mean of the indicated feature
+34 "fBodyBodyGyroJerkMag-mean()"  - the mean of the indicated feature
+35 “labelName" - The activity label name i.e. one of the following WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
